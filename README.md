@@ -2,7 +2,7 @@
 
 Instructions on the installation of R, Rstudio, etc can be found here:
 
-https://bright.uvic.ca/d2l/le/content/75904/viewContent/694287/View
+https://github.com/rpmartin/Rinstall
 
 Once you have everything installed, here is how you get started on assignment 2.
 
@@ -12,7 +12,7 @@ Once you have everything installed, here is how you get started on assignment 2.
 
     click on the clipboard icon to copy address to clipboard (the icon is to the right of the text box.)
 
-    open Rstudio.
+    open Rstudio (or Rstudio cloud)
 
     click on File in the top menu bar, then New Project, then Version Control, then Git.
 
