@@ -1,5 +1,7 @@
 # 381assignment2
 
+**Update: probably best if you leave the output as html_document, and then when you are ready to submit, open the html file in browser, and then print to file as a pdf.**
+
 Instructions on the installation of R, Rstudio, etc can be found here:
 
 https://github.com/rpmartin/Rinstall
