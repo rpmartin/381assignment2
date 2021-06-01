@@ -3,10 +3,10 @@
 # There are quite a few steps, which is why I hid these functions here, away from prying eyes... 
 damage_per_person_per_unit <- .3
 
-get_maximal_welfare <- function(mydf){
+get_maximal_welfare <- function(mydf,fun){
   maximal_welfare <- mydf%>%#take dataframe mydf which contains all the data THEN
     group_by(treatment, Rounds, round_of_ten)%>%#create separate groups for each separate simulation
-    select(role,variable,tax)%>%# keep these columns (as well as the grouping columns)
+    select(oneid, role, variable, choice, tax)%>%# keep these columns (as well as the grouping columns)
     mutate(population=n(),#counts the number of people in each group a.k.a. simulation.
            opt_tax_per_unit=population*damage_per_person_per_unit,#the optimal per unit tax is equal to the per unit harm.
            net_of_otax=case_when(role=="buyer" ~ variable, #buyers do not pay the tax.
