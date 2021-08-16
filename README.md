@@ -1,43 +1,61 @@
-# 381assignment2
+# Econ 381 assignment 1
 
-**Update: probably best if you leave the output as html_document, and then when you are ready to submit, open the html file in browser, and then print to file as a pdf.**
+The following instructions assume that: 
 
-Instructions on the installation of R, Rstudio, etc can be found here:
+1) you have, following instructions here: https://github.com/rpmartin/Rinstall, either: 
+  - installed R, Rstudio, tidyverse, Rmarkdown, and git locally (on your computer) OR
+  - signed up for an Rstudio cloud account and installed the tidyverse.
 
-https://github.com/rpmartin/Rinstall
+2) I have uploaded the data and the assignment1.R and assignment1.Rmd files (you should see them listed above. If not, they will be uploaded shortly after the experiment is completed.)
 
-Once you have everything installed, here is how you get started on assignment 2.
+## Steps:
 
-* go to https://github.com/rpmartin/381assignment2 and click on the green button labelled code.
+Click on the green button labeled code. (above)
 
-* click on the clipboard icon to copy address to clipboard (the icon is to the right of the text box.)
+Click on the clipboard icon to copy address to clipboard (the icon is to the right of the text box.)
 
-* open Rstudio (or Rstudio cloud) and click on File in the top menu bar, then New Project, then Version Control, then Git.
+open Rstudio either locally or on the cloud.
 
-* Where it asks for Repository URL paste (control V) from your clipboard (this should be what you copied from step 3)
+click on File in the top menu bar, then New Project, then Version Control, then Git.
 
-* R chooses the name of the folder in which you will be working, but you should choose where you want this folder saved.
+Where it asks for Repository URL paste (control V) from your clipboard (this should be what you copied from above)
 
-* Click Create Project and Rstudio will start in this folder, and all the files you need have been cloned into this folder from github.
+R chooses the name of the folder in which you will be working, but you should choose where you want this folder saved.
 
-* Open file assignment2.R
+Click Create Project and Rstudio will start in this folder, and all the files you need have been cloned into this folder from github.
 
-* Ensure that your cursor is at the top of the file assignment2.R (the file is open in the top-left box in Rstudio). Run the code by repeatedly hitting both control and enter. By doing so you step through the code line by line, and in the bottom left panel you see the results of each line of code. The last line of code creates your first graph, which should show up in the bottom right panel.
+Open file assignment1.R
 
-* There should be no errors (yet ;) when you run the code of assignment2.R. If there are errors, do not proceed further! Get in touch either by email or on the message board. Only once you have checked that there are no errors in your assignment2.R file should you open up assignment2.Rmd file.
+Ensure that your cursor is at the top of the file assignment1.R (the file is open in the top-left box in Rstudio). 
+Run the code by repeatedly hitting both control and enter. 
+By doing so you step through the code line by line, and in the bottom left panel you see the results of each line of code. 
+The last line of code creates your first graph, which should show up in the bottom right panel.
 
-* In the assignment2.Rmd file enter your name and student ID at the top, and "sign" your academic integrity statement (replace name here with your name).
+There should be no errors (yet ;) when you run the code of assignment1.R. If there are errors, do not proceed further! 
+Get in touch either by email or on the message board. 
+Only once you have checked that there are no errors in your assignment1.R file should you open up assignment1.Rmd file.
 
-* Knit your assignment2.Rmd file by hitting the knit button (there is a ball of yarn with a needle sticking out of it beside the word knit). This is called knitting because we are "weaving" together R code (that produces graphs and tables) and prose.
+In the assignment1.Rmd file set author to your first initial and last name, and “sign” your academic integrity statement (replace name here with your first initial and last name).
 
-* A new window should open with your assignment... you are on your way!
+Knit your assignment1.Rmd file by hitting the knit button (there is a ball of yarn with a needle sticking out of it beside the word knit). 
+This is called knitting because we are “weaving” together R code (that produces graphs and tables) and prose.
 
-* For written answers, simply write words under the questions in the assignment2.Rmd file.
+A new window should open with your assignment.
 
-* For graphs, you create and name the graph in your assignment2.R file. Check frequently to make sure your assignment2.R file still runs without errors. Only once you have made sure there are no errrors in assignment2.R save it to DISK. (your Rmd file can't utilize what isn't saved to disk e.g. the unsaved code in your editor or even objects in your current environment.)
+At this point you can start writing code (incrementally) in your .R file to create the plots you will eventually reference by name in your .Rmd file.
 
-* Embed the objects in the assignment2.Rmd file by name, and knit to see the results.
+For the written answers you include your prose in the .Rmd file.
 
-Let me know if you have any issues, I am here to help! Cheers,
+## Assignment Submission:
 
-Rich
+Unfortunately Brightspace strips images out of html files, so you will not be able to submit your knitted html file to brightspace.  Instead,
+
+* Assignment submissions to Brightspace will be your 
+1) assignment1.R file
+2) assignment1.Rmd file
+3) a link a.k.a. URL for your assignment1.html file.
+
+* The easiest way to host your assignment1.html file on the web is to click the `publish` button on Rstudio's html viewer (the html viewer opens when you successfully knit your output.) 
+
+* Choose Rpubs and setup a free account: Note that the *content* that you publish on RPubs is publicly viewable: probably best to limit the amount of personal information you provide i.e. do **not** include your student ID, and do **not** include your full name i.e. in your .Rmd file set author to R. Martin (good) rather than Richard Martin:  V00123456 (bad).
+
