@@ -1,4 +1,4 @@
-# Econ 381 assignment 1
+# Econ 381 assignment 2
 
 The following instructions assume that: 
 
@@ -6,7 +6,7 @@ The following instructions assume that:
   - installed R, Rstudio, tidyverse, Rmarkdown, and git locally (on your computer) OR
   - signed up for an Rstudio cloud account and installed the tidyverse.
 
-2) I have uploaded the data and the assignment1.R and assignment1.Rmd files (you should see them listed above. If not, they will be uploaded shortly after the experiment is completed.)
+2) I have uploaded the data and the assignment2.R and assignment2.Rmd files (you should see them listed above. If not, they will be uploaded shortly after the experiment is completed.)
 
 ## Steps:
 
@@ -24,20 +24,20 @@ R chooses the name of the folder in which you will be working, but you should ch
 
 Click Create Project and Rstudio will start in this folder, and all the files you need have been cloned into this folder from github.
 
-Open file assignment1.R
+Open file assignment2.R
 
-Ensure that your cursor is at the top of the file assignment1.R (the file is open in the top-left box in Rstudio). 
+Ensure that your cursor is at the top of the file assignment2.R (the file is open in the top-left box in Rstudio). 
 Run the code by repeatedly hitting both control and enter. 
 By doing so you step through the code line by line, and in the bottom left panel you see the results of each line of code. 
 The last line of code creates your first graph, which should show up in the bottom right panel.
 
-There should be no errors (yet ;) when you run the code of assignment1.R. If there are errors, do not proceed further! 
+There should be no errors (yet ;) when you run the code of assignment2.R. If there are errors, do not proceed further! 
 Get in touch either by email or on the message board. 
-Only once you have checked that there are no errors in your assignment1.R file should you open up assignment1.Rmd file.
+Only once you have checked that there are no errors in your assignment2.R file should you open up assignment2.Rmd file.
 
-In the assignment1.Rmd file set author to your first initial and last name, and “sign” your academic integrity statement (replace name here with your first initial and last name).
+In the assignment2.Rmd file set author to your first initial and last name, and “sign” your academic integrity statement (replace name here with your first initial and last name).
 
-Knit your assignment1.Rmd file by hitting the knit button (there is a ball of yarn with a needle sticking out of it beside the word knit). 
+Knit your assignment2.Rmd file by hitting the knit button (there is a ball of yarn with a needle sticking out of it beside the word knit). 
 This is called knitting because we are “weaving” together R code (that produces graphs and tables) and prose.
 
 A new window should open with your assignment.
@@ -51,11 +51,11 @@ For the written answers you include your prose in the .Rmd file.
 Unfortunately Brightspace strips images out of html files, so you will not be able to submit your knitted html file to brightspace.  Instead,
 
 * Assignment submissions to Brightspace will be your 
-1) assignment1.R file
-2) assignment1.Rmd file
-3) a link a.k.a. URL for your assignment1.html file.
+1) assignment2.R file
+2) assignment2.Rmd file
+3) a link a.k.a. URL for your assignment2.html file.
 
-* The easiest way to host your assignment1.html file on the web is to click the `publish` button on Rstudio's html viewer (the html viewer opens when you successfully knit your output.) 
+* The easiest way to host your assignment2.html file on the web is to click the `publish` button on Rstudio's html viewer (the html viewer opens when you successfully knit your output.) 
 
 * Choose Rpubs and setup a free account: Note that the *content* that you publish on RPubs is publicly viewable: probably best to limit the amount of personal information you provide i.e. do **not** include your student ID, and do **not** include your full name i.e. in your .Rmd file set author to R. Martin (good) rather than Richard Martin:  V00123456 (bad).
 
