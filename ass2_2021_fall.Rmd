@@ -126,7 +126,7 @@ first_plot #the code for this first plot is already in the file assignment1.R
 
 # (10 marks) 
 
-**Create a new dataframe `all_welfare` by performing a `full_join` of `realized_welfare` and `maximal_welfare`.  Using the function `mutate()` create a new variable $relative\_efficiency=\frac{realized\_mean}{maximal\_mean}\times 100$**.
+**Create a new dataframe `all_welfare` by performing a `full_join()` of `realized_welfare` and `maximal_welfare`.  Using the function `mutate()` create a new variable $relative\_efficiency=\frac{realized\_mean}{maximal\_mean}\times 100$**.
 
 ```{r not_evaluated_5->, eval=FALSE, echo=TRUE, message=FALSE}
 
