@@ -1,0 +1,154 @@
+---
+title: "Assignment 2"
+author: "Y. Name better than Your Name, do not put ID"
+output: 
+  html_document:
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+# The R code that is embedded in this Rmarkdown file is included in "chunks": This is the first chunk of R code.
+knitr::opts_chunk$set(echo = FALSE)
+source("ass2_2021_fall.R") #this is what makes your R code available for inclusion in this document.
+```
+
+**Section #:`r paste("0",section,sep="")#(you set section to either 1 or 2 in your R file)`**
+
+Students must abide by  [UVic
+  academic regulations](https://www.uvic.ca/calendar/undergrad/index.php#/policy/Sk_0xsM_V?bc=true&bcCurrent=08%20-%20Policy%20on%20Academic%20Integrity&bcGroup=Undergraduate%20Academic%20Regulations&bcItemType=policies)
+ and observe standards of scholarly integrity
+(i.e. no plagiarism or cheating). Therefore, this assignment must be
+taken individually and not with a friend, classmate, or group. You are
+also prohibited from sharing any information about the assignment with
+others. I affirm that I will not give or receive any aid on this assignment 
+and that all work will be my own. **name here**
+
+ When externalities are present but government intervention
+  is not, competitive markets typically fail to maximize social
+  welfare.  This is true even though production is efficient (good
+  produced by lowest cost producers) and the goods end up in the hands
+  of the consumers willing and able to make the largest sacrifice to
+  attain. The problem is that the wrong quantity of the good is
+  produced: Efficiency also requires that the \emph{social}
+  opportunity cost of producing the last unit of the good is equal to
+  marginal value. With negative externalities, marginal social cost
+  exceeds marginal value because buyers and sellers fail to account
+  for this negative impact. In theory a per unit tax equal to the
+  marginal external damage can restore social optimality.
+
+  In experiment 2 we investigated two treatments: A *laissez-faire*
+  treatment where the per unit tax is zero, and a
+  government intervention where a per unit tax of \$10 (paid by
+  sellers) is imposed.  Note that this tax is not optimal, because it
+  is set without knowledge of the damages per unit. However the tax
+  should still increase welfare when compared to what would occur in
+  the absence of a tax.
+
+  The point of experiment 2 is to show a simple way governments can
+  increase social welfare when a negative externality is present.
+
+# (0 marks)
+
+**For round 7, plot the Demand, production cost, and Supply with thick lines, bids and asks with thin lines, and mark the observed price and quantity with a dot.**
+
+```{r first_chunk, fig.cap="Figure 1: Buyers in Red, Sellers in Blue.  Cost of Production, Supply and Demand (thick), Bids and asks (thin). Price and quantity dot."}
+first_plot #the code for this first plot is already in the file assignment1.R
+```
+
+# (10 marks)
+
+**Copy and paste (in your assignment2.R file) the code that created `first_plot` and rename the copied code `second_plot`.  Add `mapping=aes(frame=round_of_ten)` to the call to `ggplot()`. Remove *all* the filtering of the data used in *all* of the geoms. e.g. in the first `geom_step()`, instead of  `data=filter(supply_and_demand, round_of_ten==7),` you would have `data=supply_and_demand`. Put a copy of your code that creates `second_plot` in the chunk below.**
+
+```{r not_evaluated_1->, eval=FALSE, echo=TRUE, message=FALSE}
+
+```
+
+**Make sure your code runs without error (control enter in your .R file). Then copy and paste the following code into your assignment2.R file, and run it (control enter).**
+
+```{r not_evaluated_2->, eval=FALSE, echo=TRUE, message=FALSE}
+(second_plot <- ggplotly(second_plot)%>%
+  animation_opts(1000,transition = 100)%>%
+  hide_legend()%>% 
+  config(displayModeBar = F))
+```
+
+# (10 marks)
+
+**Insert your animation `second_plot` below:**
+
+```{r second_chunk, fig.cap="Figure 2: Buyers in Red, Sellers in Blue.  Cost of Production, Supply and Demand (thick), Bids and asks (thin). Price and quantity dot."}
+#second_plot # to include second_plot remove the first # 
+```
+
+# (10 marks) 
+
+**Describe the difference between the prediction (as determined by the intersection of the supply and demand functions) and the results of the experiments (as summarized by the dot at the price and quantity.)**  
+
+ 
+
+# (5 marks) 
+
+**Create dataframe `realized_welfare` by taking dataframe `mydf` THEN `group_by()` `treatment, Rounds, round_of_ten` THEN `summarize(realized_mean = mean(profit), realized_sd=sd(profit))`.**
+
+```{r not_evaluated_3->, eval=FALSE, echo=TRUE, message=FALSE}
+
+```
+
+# (5 marks) 
+
+**What is a boxplot? What does it mean to be robust (in the statistical sense?)**
+
+
+# (5 marks) 
+
+**Using `data=realized_welfare`, `ggplot()`, `geom_jitter()` and `geom_boxplot()` create a boxplot where `aes(x=treatment,y=realized_mean)`. Set `alpha=.25` for both geoms, and  `outlier.shape = NA,fill="red"` for geom_boxplot().**
+
+```{r third_chunk}
+#third_plot # to include second_plot remove the first # 
+```
+
+# (5 marks) 
+
+**Using `data=realized_welfare`, `ggplot()`, `geom_jitter()` and `geom_boxplot()` create a boxplot where `aes(x=treatment,y=realized_sd)`. Set `alpha=.25` for both geoms, and  `outlier.shape = NA,fill="red"` for geom_boxplot().**
+
+```{r fourth_chunk}
+#fourth_plot # to include second_plot remove the first # 
+```
+
+# (10 marks) 
+
+**Create a new dataframe called `maximal_welfare` by using function `get_maximal_welfare()` with argument `mydf`.  The function `get_maximal_welfare()`  calculates the maximal welfare that is attainable for each simulation, given the supply, demand in that simulation.**
+
+```{r not_evaluated_4->, eval=FALSE, echo=TRUE, message=FALSE}
+
+```
+
+
+# (10 marks) 
+
+**Create a new dataframe `all_welfare` by performing a `full_join` of `realized_welfare` and `maximal_welfare`.  Using the function `mutate()` create a new variable $relative\_efficiency=\frac{realized\_mean}{maximal\_mean}\times 100$**.
+
+```{r not_evaluated_5->, eval=FALSE, echo=TRUE, message=FALSE}
+
+```
+
+
+# (10 marks)
+
+**Using dataframe `all_welfare` create boxplots similar to question 6, but put `relative_efficiency` on the y axis rather than `realized_mean`.**
+
+```{r fifth_chunk}
+#fifth_plot # to include second_plot remove the first # 
+```
+
+
+# (10 marks)
+
+**Why is `relative_efficiency` a better measure of the effect of the tax than `realized_mean`?**
+
+
+# (10 marks)
+
+**How would an ideal experiment differ from this experiment? i.e. What limitations hamper our ability to say "emission taxes *cause* social welfare to increase."**
+
+
