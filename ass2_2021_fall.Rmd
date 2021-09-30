@@ -88,7 +88,7 @@ first_plot #the code for this first plot is already in the file assignment1.R
 
 # (5 marks) 
 
-**Create dataframe `realized_welfare` by taking dataframe `mydf` THEN `group_by()` `treatment, Rounds, round_of_ten` THEN `summarize(realized_mean = mean(profit), realized_sd=sd(profit))`.**
+**Create dataframe `realized_welfare` by taking dataframe `mydf` THEN `group_by()` `treatment, Rounds, round_of_ten` THEN `summarize(realized_mean = mean(profit), realized_sd=sd(profit))`. Reading https://r4ds.had.co.nz/transform.html will be helpful for this question.**
 
 ```{r not_evaluated_3->, eval=FALSE, echo=TRUE, message=FALSE}
 
@@ -109,7 +109,7 @@ first_plot #the code for this first plot is already in the file assignment1.R
 
 # (5 marks) 
 
-**Using `data=realized_welfare`, `ggplot()`, `geom_jitter()` and `geom_boxplot()` create a boxplot where `aes(x=treatment,y=realized_sd)`. Set `alpha=.25` for both geoms, and  `outlier.shape = NA,fill="red"` for geom_boxplot(). Reading https://r4ds.had.co.nz/transform.html will be helpful for this question. **
+**Using `data=realized_welfare`, `ggplot()`, `geom_jitter()` and `geom_boxplot()` create a boxplot where `aes(x=treatment,y=realized_sd)`. Set `alpha=.25` for both geoms, and  `outlier.shape = NA,fill="red"` for geom_boxplot().**
 
 ```{r fourth_chunk}
 #fourth_plot # to include second_plot remove the first # 
